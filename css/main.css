@@ -1021,3 +1021,106 @@ img {
     content: " (" attr(href) ")";
   }
 }
+
+/* ============================================
+   14. CALENDAR COMPONENT
+   ============================================ */
+
+.calendar {
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-base);
+}
+
+.calendar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.calendar__title {
+  font-size: var(--font-size-xl);
+  margin: 0;
+}
+
+.calendar__nav {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--color-gray-100);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.calendar__nav:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.calendar__weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.calendar__weekday {
+  text-align: center;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gray-600);
+  font-size: var(--font-size-sm);
+  padding: var(--space-2);
+}
+
+.calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-2);
+}
+
+.calendar__day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  position: relative;
+  padding: var(--space-2);
+}
+
+.calendar__day:hover {
+  background-color: var(--color-gray-100);
+}
+
+.calendar__day--other-month {
+  color: var(--color-gray-400);
+  cursor: default;
+}
+
+.calendar__day--other-month:hover {
+  background-color: transparent;
+}
+
+.calendar__day--today {
+  background-color: var(--color-primary-lightest);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.calendar__day--has-events {
+  background-color: var(--color-accent-lightest);
+}
+
+.calendar__day--has-events:hover {
+  background-color: var(--color-accent-lighter);
+}
+
+.calendar__day-number {
+  font-size: var(--font-size-sm);
+}
