@@ -1,0 +1,6 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="8" fill="#2c5282"/>
+  <circle cx="24" cy="20" r="8" fill="#d69e2e"/>
+  <path d="M 12 32 Q 24 28 36 32" stroke="#d69e2e" stroke-width="3" fill="none"/>
+  <text x="24" y="44" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">NH</text>
+</svg>
